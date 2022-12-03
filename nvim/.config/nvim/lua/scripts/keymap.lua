@@ -8,6 +8,8 @@ function map(mode, lhs, rhs, opts)
 end
 
 map("n", "<CR>", ":noh<CR><CR>", {silent = true})
+map("n", "<C-d>", "<C-d>zz", {silent = true})
+map("n", "<C-u>", "<C-u>zz", {silent = true})
 map("n", "<leader>e", ":Ex<CR>", {silent = true})
 map("n", "<leader>p", ":lua require('telescope.builtin').grep_string({ search = vim.fn.input('Grep for > ') })<CR>", {silent = true})
 map("n", "<leader>f", ":lua require('telescope.builtin').find_files()<CR>", {silent = true})

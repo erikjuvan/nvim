@@ -19,6 +19,8 @@ vim.opt.undofile = true
 
 --vim.opt.hlsearch = false
 vim.opt.incsearch = true
+vim.opt.ignorecase = true
+vim.opt.smartcase = true
 
 vim.opt.termguicolors = true
 
@@ -38,6 +40,6 @@ vim.opt.shortmess:append("c")
 
 vim.opt.colorcolumn = "80"
 
-vim.g.mapleader = " "
+vim.opt.clipboard = "unnamedplus"
 
-vim.o.clipboard = "unnamedplus"
+vim.g.mapleader = " "
