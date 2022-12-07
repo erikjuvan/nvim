@@ -19,6 +19,8 @@ vim.opt.backup = false
 
 vim.opt.hlsearch = true
 vim.opt.incsearch = true
+vim.opt.ignorecase = true
+vim.opt.smartcase = true
 
 vim.opt.termguicolors = true
 
@@ -38,9 +40,9 @@ vim.opt.shortmess:append("c")
 
 vim.opt.colorcolumn = "80"
 
-vim.g.mapleader = " "
+vim.opt.clipboard = "unnamedplus"
 
-vim.o.clipboard = "unnamedplus"
+vim.g.mapleader = " "
 
 -- Netrw
 vim.g.netrw_browse_split = 2 -- split opened files vertically
