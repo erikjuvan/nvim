@@ -1,47 +1,42 @@
-vim.g.my_colorscheme = "tokyonight"
+vim.cmd("colorscheme gruvbox")
+--vim.cmd("colorscheme tokyonight") -- this one is also very nice
 
-require("catppuccin").setup({
-	transparent_background = false,
-});
+require'nvim-treesitter.configs'.setup {
+  highlight = {
+    enable = true,
+    -- Setting this to true will run `:h syntax` and tree-sitter at the same time.
+    -- Set this to `true` if you depend on 'syntax' being enabled (like for indentation).
+    -- Using this option may slow down your editor, and you may see some duplicate highlights.
+    -- Instead of true it can also be a list of languages
+    additional_vim_regex_highlighting = false,
+  },
+}
 
-function ColorMyPencils()
-    vim.g.gruvbox_contrast_dark = 'hard'
-    vim.g.tokyonight_transparent_sidebar = true
-    vim.g.tokyonight_transparent = true
-    vim.g.gruvbox_invert_selection = '0'
-    vim.opt.background = "dark"
-
-    vim.cmd("colorscheme " .. vim.g.my_colorscheme)
-
-    local hl = function(thing, opts)
-        vim.api.nvim_set_hl(0, thing, opts)
-    end
-
-    hl("SignColumn", {
-        bg = "none",
-    })
-
-    hl("ColorColumn", {
-        ctermbg = 0,
-        bg = "#2B79A0",
-    })
-
-    hl("CursorLineNR", {
-        bg = "None"
-    })
-
---   hl("Normal", {
---        bg = "none"
---    })
-
-    hl("LineNr", {
-        fg = "#5eacd3"
-    })
-
-    hl("netrwDir", {
-        fg = "#5eacd3"
-    })
-
+local hl = function(thing, opts)
+  vim.api.nvim_set_hl(0, thing, opts)
 end
 
-ColorMyPencils()
+--hl("SignColumn", {
+--  bg = "none",
+--})
+
+--hl("ColorColumn", {
+--  ctermbg = 0,
+--  bg = "#2B79A0",
+--})
+
+--hl("CursorLineNR", {
+--  bg = "None"
+--})
+
+--hl("Normal", {
+--  bg = "none"
+--})
+
+--hl("LineNr", {
+--  fg = "#5eacd3"
+--})
+
+--hl("netrwDir", {
+--  fg = "#5eacd3"
+--})

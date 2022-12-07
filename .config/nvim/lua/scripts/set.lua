@@ -44,7 +44,7 @@ vim.opt.clipboard = "unnamedplus"
 
 vim.g.mapleader = " "
 
--- Netrw
+-- Netrw (mostly using NERDTree though)
 vim.g.netrw_browse_split = 2 -- split opened files vertically
 vim.g.netrw_banner = 0
 vim.g.netrw_winsize = 70 -- open file with 70% win relestate

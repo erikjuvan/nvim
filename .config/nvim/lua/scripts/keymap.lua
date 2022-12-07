@@ -7,10 +7,15 @@ function map(mode, lhs, rhs, opts)
     vim.api.nvim_set_keymap(mode, lhs, rhs, options)
 end
 
-map("n", "<CR>", ":noh<CR><CR>", {silent = true})
+map("n", "<Esc>", ":noh<CR><CR>", {silent = true})
 map("n", "<C-d>", "<C-d>zz", {silent = true})
 map("n", "<C-u>", "<C-u>zz", {silent = true})
-map("n", "<leader>e", ":Ex<CR>", {silent = true})
-map("n", "<leader>p", ":lua require('telescope.builtin').grep_string({ search = vim.fn.input('Grep for > ') })<CR>", {silent = true})
-map("n", "<leader>f", ":lua require('telescope.builtin').find_files()<CR>", {silent = true})
+
+local builtin = require('telescope.builtin')
+vim.keymap.set('n', '<leader>f', builtin.find_files, {})
+vim.keymap.set('n', '<leader>p', builtin.live_grep, {})
+--vim.keymap.set('n', '<leader>fb', builtin.buffers, {})
+--vim.keymap.set('n', '<leader>fh', builtin.help_tags, {})
+
+vim.keymap.set('n', "<leader>e", ":NERDTree<CR>", {})
 
