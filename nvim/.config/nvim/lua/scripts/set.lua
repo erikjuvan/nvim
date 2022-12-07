@@ -14,10 +14,10 @@ vim.opt.wrap = false
 
 vim.opt.swapfile = false
 vim.opt.backup = false
-vim.opt.undodir = os.getenv("HOME") .. "/.vim/undodir"
-vim.opt.undofile = true
+--vim.opt.undodir = os.getenv("HOME") .. "/.vim/undodir"
+--vim.opt.undofile = true
 
---vim.opt.hlsearch = false
+vim.opt.hlsearch = true
 vim.opt.incsearch = true
 
 vim.opt.termguicolors = true
@@ -41,3 +41,8 @@ vim.opt.colorcolumn = "80"
 vim.g.mapleader = " "
 
 vim.o.clipboard = "unnamedplus"
+
+-- Netrw
+vim.g.netrw_browse_split = 2 -- split opened files vertically
+vim.g.netrw_banner = 0
+vim.g.netrw_winsize = 70 -- open file with 70% win relestate
