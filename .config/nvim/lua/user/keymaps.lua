@@ -18,4 +18,5 @@ vim.keymap.set('n', '<leader>p', builtin.live_grep, {})
 --vim.keymap.set('n', '<leader>fh', builtin.help_tags, {})
 
 vim.keymap.set('n', "<leader>e", ":NERDTree<CR>", {})
+vim.keymap.set('n', "<C-f>", ":NERDTreeToggle<CR>", {})
 
