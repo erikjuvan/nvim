@@ -26,12 +26,13 @@ return require("packer").startup(
         use("hrsh7th/nvim-cmp")
         use("hrsh7th/cmp-buffer")
         use("hrsh7th/cmp-path")
-        use("hrsh7th/cmp-cmdline")
+        --use("hrsh7th/cmp-cmdline")
         use("hrsh7th/cmp-nvim-lsp")
 
         -- LSP
         use("neovim/nvim-lspconfig")
-        use("williamboman/nvim-lsp-installer")
+        use("williamboman/mason.nvim")
+        use("williamboman/mason-lspconfig.nvim")
 
         -- Fugitive - git plugin
         --use("tpope/vim-fugitive")
