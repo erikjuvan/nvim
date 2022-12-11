@@ -7,7 +7,7 @@ function map(mode, lhs, rhs, opts)
     vim.api.nvim_set_keymap(mode, lhs, rhs, options)
 end
 
-map("n", "<Esc>", ":noh<CR><CR>", {silent = true})
+map("n", "<Esc>", ":noh<CR>", {silent = true})
 map("n", "<C-d>", "<C-d>zz", {silent = true})
 map("n", "<C-u>", "<C-u>zz", {silent = true})
 
