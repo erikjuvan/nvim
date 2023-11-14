@@ -1,6 +1,8 @@
 # dotfiles
 
-## Setup in Arch Linux:
+Copy all files except .git folder and this README.md file to user home folder
+
+## nvim setup in Arch Linux:
 Install packages
 > pacman -S fakeroot xclip unzip gcc clang ripgrep fd wget (npm)
 
