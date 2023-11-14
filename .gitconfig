@@ -1,3 +1,9 @@
+[init]
+    defaultBranch = main
+
 [user]
-	email = erik.juvan@hotmail.com
-	name = erik.juvan
+    email = erik.juvan@hotmail.com
+    name = erik.juvan
+
+[alias]
+    lg = log --oneline --graph --all
