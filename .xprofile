@@ -1,0 +1,3 @@
+xset r rate 200 40
+setxkbmap -option caps:escape
+xsetroot -solid "#111111"
