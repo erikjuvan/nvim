@@ -1,6 +1,7 @@
-# dotfiles
+# Neovim 
 
-## Setup in Arch Linux:
+## Archlinux setup
+
 Install packages
 > pacman -S fakeroot xclip unzip gcc clang ripgrep fd wget (npm)
 
