@@ -4,9 +4,9 @@ end
 
 alias vim=nvim
 alias l='eza -a --group-directories-first'
-alias ll='eza -alT --group-directories-first --ignore-glob=".git"'
-alias lla='l -lT'
-alias lw='l -lT -L1'
-alias lww='l -lT -L2'
-alias lwww='l -lT -L3'
-alias lwwww='l -lT -L4'
+alias ll='l -l'
+alias lw='ll -T -L1'
+alias lww='ll -T -L2'
+alias lwww='ll -T -L3'
+alias lwwww='ll -T -L4'
+alias llw='ll -T --ignore-glob=".git"'
