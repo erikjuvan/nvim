@@ -23,3 +23,6 @@ vim.keymap.set("n", "<A-l>", "<C-i>", {})
 vim.keymap.set("n", "<A-h>", "<C-o>", {})
 vim.keymap.set("n", "<A-Right>", "<C-i>", {})
 vim.keymap.set("n", "<A-Left>", "<C-o>", {})
+
+vim.api.nvim_set_keymap("n", "<leader>g", "<cmd>lua _lazygit_toggle()<CR>", {noremap = true, silent = true})
+vim.api.nvim_set_keymap("n", "<leader>h", "<cmd>lua _htop_toggle()<CR>", {noremap = true, silent = true})

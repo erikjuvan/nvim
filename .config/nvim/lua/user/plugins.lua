@@ -35,6 +35,10 @@ return require("packer").startup(
         use("williamboman/mason.nvim")
         use("williamboman/mason-lspconfig.nvim")
 
+        use {"akinsho/toggleterm.nvim", tag = '*', config = function()
+          require("toggleterm").setup()
+        end}
+
         -- Fugitive - git plugin
         --use("tpope/vim-fugitive")
     
