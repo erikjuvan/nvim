@@ -21,6 +21,7 @@ return require("packer").startup(
         use("folke/tokyonight.nvim")
         --use({"catppuccin/nvim", as = "catppuccin"})
         --use({"rose-pine/neovim", as = "rose-pine"})
+        use("tomasiser/vim-code-dark")
 
         -- cmp plugins
         use("hrsh7th/nvim-cmp")
