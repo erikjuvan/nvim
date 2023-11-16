@@ -1,5 +1,6 @@
-vim.cmd("colorscheme gruvbox")
+--vim.cmd("colorscheme gruvbox")
 --vim.cmd("colorscheme tokyonight") -- this one is also very nice
+vim.cmd("colorscheme codedark")
 
 require'nvim-treesitter.configs'.setup {
   highlight = {
