@@ -115,7 +115,7 @@ require("lazy").setup({
     --use("folke/tokyonight.nvim")
 
     {
-        'akinsho/toggleterm.nvim', tag = '*',
+        'akinsho/toggleterm.nvim',
         config = function()
             require("toggleterm").setup()
         end
