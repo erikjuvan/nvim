@@ -111,13 +111,17 @@ require("lazy").setup({
           vim.cmd.colorscheme 'codedark'
         end,
     },
+    -- {
+    --     -- Theme inspired by Atom
+    --     'navarasu/onedark.nvim',
+    --     priority = 1000,
+    --     config = function()
+    --         vim.cmd.colorscheme 'onedark'
+    --     end,
+    -- },
     --use("gruvbox-community/gruvbox")
     --use("folke/tokyonight.nvim")
 
-    {
-        'akinsho/toggleterm.nvim',
-        config = function()
-            require("toggleterm").setup()
-        end
-    }
+    { 'akinsho/toggleterm.nvim', version = '*', config = true }
+
 }, {})
