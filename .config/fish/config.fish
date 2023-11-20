@@ -10,3 +10,6 @@ alias lww='ll -T -L2'
 alias lwww='ll -T -L3'
 alias lwwww='ll -T -L4'
 alias llw='ll -T --ignore-glob=".git"'
+
+# Improve less by adding some default flags
+export LESS='-SXIR --incsearch'
