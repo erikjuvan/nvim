@@ -3,7 +3,8 @@ if status is-interactive
 end
 
 alias vim=nvim
-alias l='eza -a --group-directories-first'
+alias l='eza --group-directories-first'
+alias la='l -a'
 alias ll='l -l'
 alias lw='ll -T -L1'
 alias lww='ll -T -L2'
